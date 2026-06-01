@@ -1,4 +1,4 @@
-esource "aws_vpc" "new-ec2-vpc" {
+resource "aws_vpc" "new-ec2-vpc" {
   cidr_block = var.vpc_cidr_block
   tags = {
     Name = "${var.env_prefix}-vpc"
